@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy E-Wallet Currency</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Buy E-Wallet Currency</h1>
+    </header>
+    <main>
+        <p>After submission, we'll contact you with payment details and instructions.</p>
+        <form id="eWalletForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="eWallet">Choose E-Wallet:</label>
+            <select id="eWallet" name="wallet" required>
+                <option value="">Select an E-Wallet</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Apple Pay">Apple Pay</option>
+                <option value="Google Pay">Google Pay</option>
+                <option value="Samsung Pay">Samsung Pay</option>
+                <option value="Venmo">Venmo</option>
+                <option value="Alipay">Alipay</option>
+                <option value="WeChat Pay">WeChat</option>
+                <option value="Cash App">Cash App</option>
+                <!-- Add more e-wallets as needed -->
+            </select>
+
+            <label for="currency">Currency (e.g., USD, EUR):</label>
+            <input type="text" id="currency" name="currency" required>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="paymentMethod">Preferred Payment Method:</label>
+            <select id="paymentMethod" name="payment_method" required>
+                <option value="">Select a Payment Method</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Mobile Money">Mobile Money</option>
+                <!-- Add more payment methods as needed -->
+            </select>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;Trickalholding.com.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="three.js"></script>
+</body>
+</html>
